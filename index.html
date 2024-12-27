@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Activity Recognition</title>
+</head>
+<body>
+    <h2>Human Activity Recognition Prediction</h2>
+    <form method="POST" action="/predict">
+        <!-- Sensor 1 -->
+        <label for="sensor1">Sensor 1 Reading (Accelerometer X-axis):</label>
+        <input type="number" step="any" name="sensor1" id="sensor1" required><br><br>
+        
+        <!-- Sensor 2 -->
+        <label for="sensor2">Sensor 2 Reading (Accelerometer Y-axis):</label>
+        <input type="number" step="any" name="sensor2" id="sensor2" required><br><br>
+        
+        <!-- Sensor 3 -->
+        <label for="sensor3">Sensor 3 Reading (Accelerometer Z-axis):</label>
+        <input type="number" step="any" name="sensor3" id="sensor3" required><br><br>
+
+        <!-- Sensor 4 -->
+        <label for="sensor4">Sensor 4 Reading (Gyroscope X-axis):</label>
+        <input type="number" step="any" name="sensor4" id="sensor4" required><br><br>
+
+        <!-- Sensor 5 -->
+        <label for="sensor5">Sensor 5 Reading (Gyroscope Y-axis):</label>
+        <input type="number" step="any" name="sensor5" id="sensor5" required><br><br>
+
+        <!-- Sensor 6 -->
+        <label for="sensor6">Sensor 6 Reading (Gyroscope Z-axis):</label>
+        <input type="number" step="any" name="sensor6" id="sensor6" required><br><br>
+
+        <!-- Sensor 7 -->
+        <label for="sensor7">Sensor 7 Reading (Magnetometer X-axis):</label>
+        <input type="number" step="any" name="sensor7" id="sensor7" required><br><br>
+
+        <!-- Sensor 8 -->
+        <label for="sensor8">Sensor 8 Reading (Magnetometer Y-axis):</label>
+        <input type="number" step="any" name="sensor8" id="sensor8" required><br><br>
+
+        <!-- Sensor 9 -->
+        <label for="sensor9">Sensor 9 Reading (Magnetometer Z-axis):</label>
+        <input type="number" step="any" name="sensor9" id="sensor9" required><br><br>
+
+        <button type="submit">Predict Activity</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
